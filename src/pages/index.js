@@ -24,8 +24,8 @@ export default function Home() {
         <meta
           property="og:description"
           content="hello guys welcome" />
-        <meta property="og:url" content="https://test-next-7d2a.vercel.app/" />
-        <link rel="canonical" href="https://test-next-7d2a.vercel.app/" key="canonical" />
+        <meta property="og:url" content="https://test-canonicals.vercel.app" />
+        <link rel="canonical" href="https://test-canonicals.vercel.app" key="canonical" />
         {/*<meta name="google-site-verification" content="FKfrICFeAOQbCM9FL3oMxv1sV_ezFPWnUDkhBfMrPMY" />*/}
       </Head>
       <main>

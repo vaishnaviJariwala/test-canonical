@@ -32,7 +32,7 @@ export default function Index() {
 				<meta
 					property="og:description"
 					content={data?.body} />
-				<meta property="og:url" content="https://test-next-7d2a.vercel.app/" />
+				<meta property="og:url" content="https://test-canonicals.vercel.app" />
 			</Head>
 			<h1>{data?.title}</h1>
 			<p>{data?.body}</p>
