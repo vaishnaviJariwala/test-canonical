@@ -32,7 +32,8 @@ export default function Index() {
 				<meta
 					property="og:description"
 					content={data?.body} />
-				<meta property="og:url" content="https://test-canonicals.vercel.app" />
+				<meta property="og:url" content={`https://test-canonicals.vercel.app/${data?.id}`} />
+				<link rel="canonical" href={`https://test-canonicals.vercel.app/${data?.id}`} key="canonical" />
 			</Head>
 			<h1>{data?.title}</h1>
 			<p>{data?.body}</p>
