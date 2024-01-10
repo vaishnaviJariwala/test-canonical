@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 export default function Index() {
 	const [data, setData] = useState({});
 	const router = useRouter();
-	console.log(router)
 	const fetchData = async () => {
 		if(router?.query?.id) {
 			await fetch(`https://jsonplaceholder.typicode.com/posts/${router?.query?.id}`).then(response => response.json())
@@ -32,8 +31,8 @@ export default function Index() {
 				<meta
 					property="og:description"
 					content={data?.body} />
-				<meta property="og:url" content={`https://test-canonicals.vercel.app/${data?.id}`} />
-				<link rel="canonical" href={`https://test-canonicals.vercel.app/${data?.id}`} key="canonical" />
+				<meta property="og:url" content={`https://test-canonicals.vercel.app/${router?.query?.id}`} />
+				<link rel="canonical" href={`https://test-canonicals.vercel.app/${router?.query?.id}`} key="canonical" />
 			</Head>
 			<h1>{data?.title}</h1>
 			<p>{data?.body}</p>
